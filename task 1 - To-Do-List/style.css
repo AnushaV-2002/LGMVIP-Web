@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #efefef;
+}
+.container{
+    padding:1em;
+    display:grid;
+    gap:2em;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.to-do-list_container{
+    width:auto;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+   padding:1.5em;
+   gap:1em;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
+.input_container {
+    
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    gap:0.5em;
+}
+.input_container input{
+   
+    font-size: 22px;
+    padding:0.1em;
+    outline: none;
+    border-width: 0.5px;
+    border-style: solid;
+  
+    color:black;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#EFEFEF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+::placeholder {
+    color: black;
+    padding:0.2em;
+  }
+.input_container button{
+    padding:0.5em;
+    font-size: 18px;
+    opacity:0.2;
+}
+
+#add_button.active{
+    opacity:1;
+}
+.taskscontainer{
+   display:grid;
+   grid-template-columns: 1fr;
+   gap:1em;
+   width:100%;
+   font-weight: 400;
+   
+}
+
+.add_list.completed span{
+    text-decoration: line-through;
+    color:black;
+}
+.taskscontainer .add_list{
+    width:100%;
+    height:auto;
+    background-color:#efefef ;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-evenly;
+    align-items: center;
+    padding:1em;
+}
+.taskscontainer .add_list .item_btn{
+    justify-self: end;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+}
